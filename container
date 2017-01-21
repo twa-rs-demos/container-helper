@@ -1,0 +1,30 @@
+#! /usr/bin/env bash
+
+cd /home/afaren/twars/assembly
+
+start() {
+	docker-compose up -d $*
+}
+
+stop() {
+	docker-compose kill $*
+}
+
+action="${1}"
+
+
+case $action in
+	start) 
+		echo "start"
+		shift
+		start "$*"
+		;;
+	 stop)
+		echo "stop"
+		shift
+		stop "$*"
+		;;
+		*)
+		echo "start | stop" 
+		;;
+esac
