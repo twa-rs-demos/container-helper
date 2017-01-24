@@ -1,6 +1,15 @@
 # Container Helper Script
 
-**将文件 `container` 放置到系统可执行文件路径之下**，即可使用。
+修改 `container` 第三行
+```
+cd /home/afaren/twars/assembly
+``` 
+中的项目路径为你 recruiting-system 的路径，比如
+```
+cd /home/workspace/recruiting-system/assembly
+```
+
+并**将文件 `container` 放置到系统可执行文件路径之下**，即可使用。
 
 
 想要启动的容器，只需要在 container start 后面跟上容器名即可，用法可以参考 `docker-compose`, 比如
