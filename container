@@ -1,6 +1,18 @@
 #! /usr/bin/env bash
 
 ASSEMBLY='/home/afaren/twars/assembly'
+USAGE="Usage: `basename $0` < start | stop > container names"
+ERR_MSG="the ASSEMBLY directory you setup is not exist!"
+
+if [[ $# -eq 0 ]]; then
+	echo "$USAGE" >&2 
+	exit 1
+fi
+
+if [[ ! -d $ASSEMBLY ]]; then
+	echo "$ERR_MSG" >&2
+	exit 1
+fi
 
 cd $ASSEMBLY 
 
