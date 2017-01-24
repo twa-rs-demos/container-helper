@@ -2,11 +2,11 @@
 
 修改 `container` 第三行
 ```
-cd /home/afaren/twars/assembly
+ASSEMBLY='/home/afaren/twars/assembly'
 ``` 
 中的项目路径为你 recruiting-system 的路径，比如
 ```
-cd /home/workspace/recruiting-system/assembly
+ASSEMBLY='/home/workspace/recruiting-system/assembly'
 ```
 
 并**将文件 `container` 放置到系统可执行文件路径之下**，即可使用。
