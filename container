@@ -1,6 +1,8 @@
 #! /usr/bin/env bash
 
-cd /home/afaren/twars/assembly
+ASSEMBLY='/home/afaren/twars/assembly'
+
+cd $ASSEMBLY 
 
 start() {
 	docker-compose up -d $*
