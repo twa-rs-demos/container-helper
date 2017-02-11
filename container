@@ -17,11 +17,11 @@ fi
 cd $ASSEMBLY 
 
 start() {
-	docker-compose up -d $*
+	docker-compose -f docker-compose-dev.yml up -d $*
 }
 
 stop() {
-	docker-compose kill $*
+	docker-compose -f docker-compose-dev.yml kill $*
 }
 
 action="${1}"
